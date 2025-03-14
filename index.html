@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <title>My Website</title>
+        <meta name="description" content="A website about me" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="global.css" />
+        <!-- Theme Toggle Script -->
+        <script>
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const themeToggle = document.querySelector(".theme-toggle");
+
+                themeToggle.addEventListener("click", function () {
+                    const currentTheme =
+                        document.documentElement.getAttribute("data-theme");
+                    const newTheme =
+                        currentTheme === "light" ? "dark" : "light";
+
+                    document.documentElement.setAttribute(
+                        "data-theme",
+                        newTheme
+                    );
+                    localStorage.setItem("theme", newTheme);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <noscript>Please turn on JavaScript to view this website!</noscript>
+
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <div class="nav-brand">CN</div>
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle"></button>
+        </nav>
+
+        <main>
+            <!-- Left Column -->
+            <div class="left-column">
+                <figure>
+                    <img src="derp.webp" />
+                    <cite
+                        >This image was taken from
+                        <a href="https://shorturl.at/WlLPl"
+                            >https://shorturl.at/WlLPl</a
+                        ></cite
+                    >
+                    <figcaption>
+                        <p>My online persona character :D</p>
+                    </figcaption>
+                </figure>
+
+                <header>
+                    <h1>Charles Nguyen</h1>
+                    <h2>Computer Science Undergraduate at UC San Diego</h2>
+                </header>
+
+                <section id="home">
+                    <h3>About Me</h3>
+                    <p>
+                        My name is <strong>Charles Nguyen</strong>, and I am a
+                        third-year Computer Science undergraduate at the
+                        <a href="https://ucsd.edu"
+                            >University of California, San Diego</a
+                        >
+                    </p>
+                </section>
+
+                <section id="contact">
+                    <h3>Contact Information</h3>
+                    <address>
+                        <dl>
+                            <dt>Email:</dt>
+                            <dd>
+                                <a href="mailto:cmn010@ucsd.edu"
+                                    >cmn010@ucsd.edu</a
+                                >
+                            </dd>
+                            <dt>GitHub:</dt>
+                            <dd>
+                                <a href="https://github.com/chark1es"
+                                    >github.com/chark1es</a
+                                >
+                            </dd>
+                        </dl>
+                    </address>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Technical Skills Section -->
+                <section id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h3>Python</h3>
+                            <progress value="4" max="5"></progress>
+                        </div>
+                        <div class="skill-item">
+                            <h3>JavaScript</h3>
+                            <progress value="3" max="5"></progress>
+                        </div>
+                        <div class="skill-item">
+                            <h3>HTML/CSS</h3>
+                            <progress value="4" max="5"></progress>
+                        </div>
+                        <div class="skill-item">
+                            <h3>React</h3>
+                            <progress value="1" max="5"></progress>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Node.js</h3>
+                            <progress value="2" max="5"></progress>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Docker</h3>
+                            <progress value="2" max="5"></progress>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section id="certifications">
+                    <h2>Certifications</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <h3>
+                                Microsoft Office Specialist: Word Associate
+                                (Office 2019)
+                            </h3>
+                            <p>Issued by Microsoft - 2021</p>
+                        </li>
+                        <li>
+                            <h3>Okta Certified Professional</h3>
+                            <p>Issued by Okta - 2025</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Made by Charles Nguyen, all files are used for educational
+                purposes
+            </p>
+        </footer>
+    </body>
+</html>

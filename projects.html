@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <title>Projects - Charles Nguyen</title>
+        <meta name="description" content="Projects by Charles Nguyen" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="global.css" />
+        <!-- Theme Toggle Script -->
+        <script>
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const themeToggle = document.querySelector(".theme-toggle");
+
+                themeToggle.addEventListener("click", function () {
+                    const currentTheme =
+                        document.documentElement.getAttribute("data-theme");
+                    const newTheme =
+                        currentTheme === "light" ? "dark" : "light";
+
+                    document.documentElement.setAttribute(
+                        "data-theme",
+                        newTheme
+                    );
+                    localStorage.setItem("theme", newTheme);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <noscript>Please turn on JavaScript to view this website!</noscript>
+
+        <nav class="nav-bar">
+            <div class="nav-brand">CN</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle"></button>
+        </nav>
+
+        <main class="projects-main">
+            <header class="projects-header">
+                <h1>My Projects</h1>
+                <h2>A collection of my work</h2>
+            </header>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img
+                        src="./thumbnails/hw1.webp"
+                        alt="Screenshot of CSE 134B Homework 1 showing the main page with HTML elements and debugging tools"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    />
+                    <div class="project-content">
+                        <h3>CSE 134B - HW 1</h3>
+                        <p>
+                            This homework was a simple introduction to HTML,
+                            http headers, and the basics of
+                            inspecting/debugging.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Debugging</span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chark1es/cse134-hw1"
+                                >GitHub</a
+                            >
+                            <a href="https://cse134b-ucsd-cmn010.netlify.app"
+                                >Live Site</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                        src="./thumbnails/hw2.webp"
+                        alt="Screenshot of CSE 134B Homework 2 demonstrating proper HTML element implementation"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    />
+                    <div class="project-content">
+                        <h3>CSE 134B - HW 2</h3>
+                        <p>
+                            This homework provided a way to implement HTML and
+                            making sure we use built in HTML elements.
+                        </p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chark1es/cse134b-hw2"
+                                >GitHub</a
+                            >
+                            <a href="https://cse134b-hw2-cmn010.netlify.app"
+                                >Live Site</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="./thumbnails/wireframe.webp"
+                        alt="Initial wireframe design showing the layout planning for the website"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    />
+                    <div class="project-content">
+                        <h3>Initial Wireframe</h3>
+                        <p>
+                            This is the initial wireframe for the website. It
+                            has obviously changed since then lol.
+                        </p>
+                        <div class="project-links">
+                            <a href="./thumbnails/wireframe.webp"
+                                >View the full image here</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                        src="./thumbnails/hw3.webp"
+                        alt="Screenshot of CSE 134B Homework 3 showcasing enhanced content and CSS styling"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    />
+                    <div class="project-content">
+                        <h3>CSE 134B - HW 3</h3>
+                        <p>
+                            This homework is a continuation of the previous
+                            homework assignment, but with more relevant content
+                            and CSS
+                        </p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chark1es/cse134b-hw3"
+                                >GitHub</a
+                            >
+                            <a href="https://cse134b-hw3-cmn010.netlify.app"
+                                >Live Site</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Made by Charles Nguyen, all files are used for educational
+                purposes
+            </p>
+        </footer>
+    </body>
+</html>
