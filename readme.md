@@ -9,12 +9,12 @@ A portfolio website showcasing various projects for CSE 134B.
 -   **Theme Toggle**: Light/Dark theme support with persistent user preference
 -   **Responsive Design**: Built with mobile-first approach using CSS
 
-## Project Structure
+## Project Component Structure
 
 -   `projects.html`: Main projects page with dynamic content
 -   `js/projectLoader.js`: Handles project loading from local and remote sources
 -   `js/projectCard.js`: Defines the custom project card component
--   `global.css`: Global styles for the application
+-   `global.css`: Global styles for the entire website
 -   `thumbnails/`: Contains project images
 
 ## Changelog Summary
