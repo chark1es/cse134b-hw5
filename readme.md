@@ -19,7 +19,7 @@ A portfolio website showcasing various projects for CSE 134B.
 
 ## Changelog Summary
 
-This homework contains changes from HW 4. It adds more javascript functionality by making the projects dynamically rendered rather than being hardcoded. Per the assignment, two buttons were added to show local and remote projects. To switch between the local and remote storage, I made it so the localstorage data is deleted to make sure the data is properly differentiated. I also fixed css bugs, such as making the project card links look better as well as a more readable dark mode. To add on, I also added links to the certifications so anyone viewing the portfolio can properly view it. The font was also changed from Inter to Jetbrains Mono due to jetbrains being my favorite coding font, and since it is my portfolio, it would only make sense if I used the font I liked.
+For this project, I made a few changes on top of the homework requirements. For fetching local/remote date, using javascript, I made it so the localstorage gets deleted everytime the button to switch the data gets pressed. This is to show that the data is actually being fetches and prevents any side-effects (duplicate data, doesn't load local data since the remote data contains the same data, etc). Another change I did was CSS styling. Since the project-card component is being dynamically loaded, I had to move the styling from the global css file to the js file. On top of that, I also changed the existing styling to make it to where the UI would look better (buttons, links, color), especially when dark mode is enabled. The certification and footer was also slightly changed, where I added certification links and centered the footer. One last change I made was how forms were handled. Before it just submitted to `httpbin.org`, but I modified it to use `formsubmit.co` for actual form submissions. I also modified the attributed and form format to make it function how I would like it to function.
 
 ## Changelog (bottom is most recent)
 
@@ -42,4 +42,5 @@ This homework contains changes from HW 4. It adds more javascript functionality 
 -   Added credly links for each certification.
     -   Made it so the title has the link rather than the entire card.
 -   Centered the footer text
+-   Changed the readme summary
 -   Updated the contact form to use `formsubmit.co` as the way to send emails for forms.
