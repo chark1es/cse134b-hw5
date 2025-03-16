@@ -42,3 +42,4 @@ This homework contains changes from HW 4. It adds more javascript functionality 
 -   Added credly links for each certification.
     -   Made it so the title has the link rather than the entire card.
 -   Centered the footer text
+-   Updated the contact form to use `formsubmit.co` as the way to send emails for forms.

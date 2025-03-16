@@ -49,8 +49,9 @@
                 <h1>Contact Me</h1>
                 <p>Fill out the form below to reach me!</p>
 
+                <!-- The email (adb0b007835c00f39f3ce685160ffcec) is obfuscated to prevent spam -->
                 <form
-                    action="https://httpbin.org/post"
+                    action="https://formsubmit.co/adb0b007835c00f39f3ce685160ffcec"
                     method="post"
                     class="contact-form"
                     novalidate
@@ -93,6 +94,17 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span>:</label</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="_subject"
+                            placeholder="Enter the subject"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-group">
                         <label for="comments"
                             >Comments <span class="required">*</span>:</label
                         >
@@ -118,7 +130,9 @@
                         >
                     </div>
 
-                    <input type="hidden" name="possible_bot" value="true" />
+                    <!-- Formsubmit.co related inputs-->
+                    <input type="text" name="_honey" style="display: none" />
+                    <input type="hidden" name="_template" value="table">
 
                     <div class="form-actions">
                         <button type="submit">Submit</button>
