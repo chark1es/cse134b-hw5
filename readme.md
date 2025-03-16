@@ -33,3 +33,7 @@ A portfolio website showcasing various projects for CSE 134B.
     -   The dark mode css was terrible to read so it got modified to make it look better.
     -   The links, when overflowed, looks terrible. A button ui was added to make it look much better.
 -   Added a readme to describe the changes based on the HW 5 guidelines
+-   Modified the CSS to disabled user selection in the certifications.
+-   Modified the font to use my favorite font, Jetbrains Mono, as the default font.
+-   Added credly links for each certification.
+-   Centered the footer text
