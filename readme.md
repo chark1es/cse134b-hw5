@@ -1,4 +1,4 @@
-# CSE 134B Projects
+# CSE 134B Project
 
 A portfolio website showcasing various projects for CSE 134B.
 
@@ -16,6 +16,10 @@ A portfolio website showcasing various projects for CSE 134B.
 -   `js/projectCard.js`: Defines the custom project card component
 -   `global.css`: Global styles for the application
 -   `thumbnails/`: Contains project images
+
+## Changelog Summary
+
+This homework contains changes from HW 4. It adds more javascript functionality by making the projects dynamically rendered rather than being hardcoded. Per the assignment, two buttons were added to show local and remote projects. To switch between the local and remote storage, I made it so the localstorage data is deleted to make sure the data is properly differentiated. I also fixed css bugs, such as making the project card links look better as well as a more readable dark mode. To add on, I also added links to the certifications so anyone viewing the portfolio can properly view it. The font was also changed from Inter to Jetbrains Mono due to jetbrains being my favorite coding font, and since it is my portfolio, it would only make sense if I used the font I liked.
 
 ## Changelog (bottom is most recent)
 
