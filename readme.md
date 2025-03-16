@@ -36,4 +36,5 @@ A portfolio website showcasing various projects for CSE 134B.
 -   Modified the CSS to disabled user selection in the certifications.
 -   Modified the font to use my favorite font, Jetbrains Mono, as the default font.
 -   Added credly links for each certification.
+    -   Made it so the title has the link rather than the entire card.
 -   Centered the footer text
